@@ -1,0 +1,8 @@
+module MyMaterial
+plugin mymaterial
+
+#controls
+Button 0.1 Button.qml
+
+#styles
+ButtonStyle 0.1 ButtonStyle.qml

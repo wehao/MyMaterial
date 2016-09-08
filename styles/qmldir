@@ -1,0 +1,2 @@
+module QtQuick.Controls.Styles.MyMaterial
+ButtonStyle 0.1 ButtonStyle.qml
