@@ -13,7 +13,9 @@ SOURCES += \
     myitem.cpp
 
 DISTFILES += \
-    qmldir
+    qmldir \
+    README.md \
+    core/Ink.qml
 
 
 materials.files += \
@@ -27,5 +29,14 @@ qmldirs.path = $$DESTDIR
 styles.files += \
     styles/*
 styles.path = $$[QT_INSTALL_QML]/QtQuick/Controls/Styles/MyMaterial
-COPIES += materials qmldirs styles
+
+window.files += \
+    window/*
+window.path = $$DESTDIR
+
+core.files += \
+    core/*
+core.path = $$DESTDIR
+
+COPIES += materials qmldirs styles window core
 

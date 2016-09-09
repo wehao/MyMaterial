@@ -1,7 +1,7 @@
 import QtQuick 2.6
 import QtQuick.Controls 1.3 as Controls
-import QtQuick.Controls.Styles.MyMaterial 1.0 as MyMaterialStyle
-import MyMaterial 1.0
+import QtQuick.Controls.Styles.MyMaterial 0.1 as MyMaterialStyle
+//mport MyMaterial 0.1
 
 Controls.Button {
 	id: button
