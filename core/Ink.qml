@@ -10,9 +10,8 @@
  */
 
 import QtQuick 2.4
-import QtGraphicalEffects 1.0
-//import Material 0.3
-//import Material.Extras 0.1
+//import MyMaterial 0.1
+import MyMaterial.Extras 0.1
 
 /*!
    \qmltype Ink
@@ -27,21 +26,21 @@ MouseArea {
     //hoverEnabled: Device.hoverEnabled
     //z: 2
 
-    property int startRadius: circular ? width/10 : width/6
-    property int endRadius
+//    property int startRadius: circular ? width/10 : width/6
+//    property int endRadius
 
-    property Item lastCircle
-    property color color: Qt.rgba(0,0,0,0.1)
+//    property Item lastCircle
+//    property color color: Qt.rgba(0,0,0,0.1)
 
-    property bool circular: false
-    property bool centered: false
+//    property bool circular: false
+//    property bool centered: false
 
     //property int focusWidth: width - 32 * Units.dp
-    property int focusWidth: width - 32 * 1
-    property bool focused
-    property color focusColor: "transparent"
+//    property int focusWidth: width - 32 * 1
+//    property bool focused
+//    property color focusColor: "transparent"
 
-    property bool showFocus: true
+//    property bool showFocus: true
 
     onPressed: {
         createTapCircle(mouse.x, mouse.y)
@@ -230,34 +229,13 @@ MouseArea {
                 }
             }
 
-//            CircleMask {
-//                anchors.fill: parent
-//                source: circleParent
-//                visible: circular
-//            }
-
-            Item {
-                id: item
-
-                property alias source: mask.source
-
-                Rectangle {
-                    id: circleMask
-                    anchors.fill: parent
-
-                    smooth: true
-                    visible: false
-
-                    radius: Math.max(width/2, height/2)
-                }
-
-                OpacityMask {
-                    id: mask
-
-                    anchors.fill: parent
-                    maskSource: circleMask
-                }
+            CircleMask {
+                anchors.fill: parent
+                source: circleParent
+                visible: circular
             }
+
+
         }
     }
 }

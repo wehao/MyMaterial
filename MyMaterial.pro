@@ -38,5 +38,9 @@ core.files += \
     core/*
 core.path = $$DESTDIR
 
-COPIES += materials qmldirs styles window core
+extras.files += \
+    extras/*
+extras.path = $$DESTDIR/Extras
+
+COPIES += materials qmldirs styles window core extras
 

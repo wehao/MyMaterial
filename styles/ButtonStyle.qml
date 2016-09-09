@@ -23,17 +23,17 @@ ButtonStyle {
     }
 
     background: Rectangle  {
-//        Ink {
-//            id: mouseArea
-//            anchors.fill: parent
+        Ink {
+            id: mouseArea
+            anchors.fill: parent
 
-////            Connections {
-////                target: control.__behavior
-////                onPressed: mouseArea.onPressed(mouse)
-////                onCanceled: mouseArea.onCanceled()
-////                onReleased: mouseArea.onReleased(mouse)
-////            }
-//        }
+            Connections {
+                target: control.__behavior
+                onPressed: mouseArea.onPressed(mouse)
+                onCanceled: mouseArea.onCanceled()
+                onReleased: mouseArea.onReleased(mouse)
+            }
+        }
         color: "lightyellow"
     }
 }
