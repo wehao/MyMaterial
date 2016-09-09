@@ -22,25 +22,25 @@ import MyMaterial.Extras 0.1
 MouseArea {
     id: view
 
-    //clip: true
+    clip: true
     //hoverEnabled: Device.hoverEnabled
-    //z: 2
+    z: 2
 
-//    property int startRadius: circular ? width/10 : width/6
-//    property int endRadius
+    property int startRadius: circular ? width/10 : width/6
+    property int endRadius
 
-//    property Item lastCircle
-//    property color color: Qt.rgba(0,0,0,0.1)
+    property Item lastCircle
+    property color color: Qt.rgba(0,0,0,0.1)
 
-//    property bool circular: false
-//    property bool centered: false
+    property bool circular: false
+    property bool centered: false
 
     //property int focusWidth: width - 32 * Units.dp
-//    property int focusWidth: width - 32 * 1
-//    property bool focused
-//    property color focusColor: "transparent"
+    property int focusWidth: width - 32 * 1
+    property bool focused
+    property color focusColor: "transparent"
 
-//    property bool showFocus: true
+    property bool showFocus: true
 
     onPressed: {
         createTapCircle(mouse.x, mouse.y)
