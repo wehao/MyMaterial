@@ -34,6 +34,5 @@ ButtonStyle {
                 onReleased: mouseArea.onReleased(mouse)
             }
         }
-        color: "lightyellow"
     }
 }
